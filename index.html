@@ -1,0 +1,503 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+					<h1>Bastien</h1>
+								<p>Étudiant en BUT Tech de Co - Mon Portfolio Professionnel</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">MOI</a></li>
+								<li><a href="#about">COMPÉTENCES</a></li>
+								<li><a href="#work">PORTFOLIO</a></li> <li><a href="#contact">CONTACT</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+					<article id="intro">
+    <h2 class="major">À propos de moi</h2>
+
+    <h3>Qui suis-je ?</h3>
+   <p>Je m’appelle Bastien, j’ai 19 ans, issu d'une grande famille j'accorde beaucoup d'importance aux moments partagés. Curieux et ouvert sur le monde, j’ai eu la chance de voyager en 
+<a href="javascript:void(0)" onclick="allerAuVoyage('europe')">Espagne</a>, en 
+<a href="javascript:void(0)" onclick="allerAuVoyage('europe')">Italie</a> et aux 
+<a href="javascript:void(0)" onclick="allerAuVoyage('usa')">États-Unis</a>.</p>
+    <span class="image main"><img src="images/maphoto.jpg" alt="Photo de Bastien" /></span>
+
+    <h3>Ce que j'aime</h3>
+    <p>Cliquez sur les centres d'intérêt ci-dessous pour découvrir mes photos :</p>
+
+    <ul class="actions fit small">
+        <li><a href="javascript:void(0)" onclick="montrerImage('img1', this)" class="button primary fit small btn-galerie">Friends</a></li>
+        <li><a href="javascript:void(0)" onclick="montrerImage('img2', this)" class="button fit small btn-galerie">Starboy</a></li>
+        <li><a href="javascript:void(0)" onclick="montrerImage('img3', this)" class="button fit small btn-galerie">Plat</a></li>
+        <li><a href="javascript:void(0)" onclick="montrerImage('img4', this)" class="button fit small btn-galerie">Milo</a></li>
+        <li><a href="javascript:void(0)" onclick="montrerImage('img5', this)" class="button fit small btn-galerie">Lavande</a></li>
+    </ul>
+
+    <div id="ma-galerie-dynamique">
+        <div id="img1" class="image-item">
+            <span class="image main"><img src="images/friends.png" alt="Friends" /></span>
+            <p style="text-align:center;">Une série que j'adore regarder des centaines de fois</p>
+        </div>
+
+        <div id="img2" class="image-item" style="display:none;">
+            <span class="image main"><img src="images/starboy.png" alt="Starboy" /></span>
+            <p style="text-align:center;">Inspiration Starboy.</p>
+        </div>
+
+        <div id="img3" class="image-item" style="display:none;">
+            <span class="image main"><img src="images/plat.png" alt="Plat" /></span>
+            <p style="text-align:center;">La gastronomie que j'aime cuisiner</p>
+        </div>
+
+        <div id="img4" class="image-item" style="display:none;">
+            <span class="image main"><img src="images/milo.png" alt="Milo" /></span>
+            <p style="text-align:center;">Milo !</p>
+        </div>
+
+        <div id="img5" class="image-item" style="display:none;">
+            <span class="image main"><img src="images/lavande.png" alt="Lavande" /></span>
+            <p style="text-align:center;">Mon jardin l'été.</p>
+        </div>
+    </div>
+
+    <script>
+        function montrerImage(idImage, elementClique) {
+            // A. GESTION DES IMAGES
+            // 1. On cache toutes les images
+            var images = document.getElementsByClassName('image-item');
+            for (var i = 0; i < images.length; i++) {
+                images[i].style.display = 'none';
+            }
+            // 2. On affiche celle qu'on a cliquée
+            document.getElementById(idImage).style.display = 'block';
+
+            // B. GESTION DES BOUTONS (COULEURS)
+            // 1. On enlève la classe "primary" (couleur) de TOUS les boutons
+            var boutons = document.getElementsByClassName('btn-galerie');
+            for (var j = 0; j < boutons.length; j++) {
+                boutons[j].classList.remove('primary');
+            }
+            // 2. On ajoute la classe "primary" UNIQUEMENT au bouton cliqué
+            elementClique.classList.add('primary');
+        }
+    </script>
+
+</article>
+
+						<!-- Work -->
+							<article id="work">
+    <h2 class="major">Mon Portfolio</h2>
+    <p>Voici un aperçu de mes réalisations académiques et de mes découvertes personnelles.</p>
+
+    <section>
+        <h3>Projets IUT & Créations</h3>
+        <h4>Excel</h4>
+        <span class="image main"><img src="images/excel.png" alt="Projets IUT" /></span>
+        <p>Avec Excel j'ai appris à utiliser un grand nombre de formules permettant de gagner beaucoup de temps<p>
+        <h4>Canva</h4>
+        <span class="image main"><img src="images/canva.png" alt="Projets IUT" /></span>
+        <span class="image main"><img src="images/canva2.png" alt="Projets IUT" /></span>
+        <p>En BUT TC Canva devient notre meilleur ami, on s'en sert pour tout, les diaporamas, la création de visuel ou même de logo<p>
+        <h4>HTML</h4>
+        <span class="image main"><img src="images/html.png" alt="Projets IUT" /></span>
+        <p>J'ai même appris à coder mon propre site internet, et je dois l'avouer ça me rend plutot fier de moi (merci Mr Rouchon)<p>
+        <h4>Vente</h4>
+         <span class="image main"><img src="images/bricosub.png" alt="Projets IUT" /></span>
+         <p> Ma SAE vente consistait à gérer une entreprise pendant une semaine, voici le dossier que nous avons présenté avec la stratégie définie<p>
+         <li><a href="assets/saevente.pdf" target="_blank" class="button primary fit">Ouvrir le dossier</a></li>
+         <br>
+        <h4>Négociation</h4>
+         <span class="image main"><img src="images/mercedes.png" alt="Projets IUT" /></span>
+         <p> Ici j'ai du me mettre dans la peau d'un commercial et réaliser une situation de négociation avec un client<p>
+         <li><a href="assets/mercedes.pdf" target="_blank" class="button primary fit">Ouvrir le dossier</a></li>
+
+
+    </section>
+    
+
+
+    <hr />
+
+    <section>
+        <h3 class="major">Mes Voyages</h3>
+        <p>L'ouverture internationale est au cœur de mon profil. Voici quelques souvenirs marquants.</p>
+
+        <h4 id="usa">New York, USA</h4>
+        <span class="image main"><img src="images/voyage_ny.jpg" alt="New York" /></span>
+        <p>Un voyage marquant axé sur la découverte culturelle et la pratique de l'anglais.</p>
+        
+       <h4 id="europe">Europe</h4>
+        <div class="row">
+            <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/voyage_espagne.jpg" alt="Espagne" /></span>
+            </div>
+            <div class="col-6 col-12-small">
+                <span class="image fit"><img src="images/voyage_italie.jpg" alt="Italie" /></span>
+            </div>
+        </div>
+        <p>Découverte de l'Espagne et de l'Italie : richesse architecturale et art de vivre.</p>
+    </section>
+</article>
+
+						<!-- About -->
+							<article id="about">
+    <h2 class="major">Compétences & Expérience</h2>
+    
+    <h3>Mon Expérience Pro</h3>
+    <span class="image main"><img src="images/lggroupe.jpg" alt="Logo LG Groupe Mercedes" /></span>
+    
+    <p>Je suis actuellement en alternance chez <strong>Mercedes –LG Groupe à Alès</strong>. Cette expérience est au cœur de ma montée en compétences.</p>
+
+    <p> Voici une courte vidéo qui présente la concession <p>
+<span class="image main">
+    <video controls width="100%">
+        <source src="videos/mavideo.mp4" type="video/mp4">
+    </video>
+</span>
+    
+    <h3>Savoir-Faire acquis</h3>
+    <p>Grâce à cette immersion en entreprise et à ma formation IUT, je maîtrise aujourd'hui :</p>
+    <ul>
+        <li><strong>Relation Client :</strong> Accueil, conseil et fidélisation.</li>
+        <li><strong>Négociation :</strong> Techniques de vente et argumentation.</li>
+        <li><strong>Outils Numériques :</strong> Excel (Tableaux de bord), Canva, Pack Office.</li>
+    </ul>
+
+    <hr />
+
+    <h3>Mes Documents</h3>
+    <p>Pour plus de détails sur mon parcours, voici mon CV et ma Lettre de Motivation :</p>
+    <ul class="actions fit">
+        <li><a href="assets/moncv.pdf" target="_blank" class="button primary fit">Télécharger mon CV</a></li>
+        <li><a href="assets/malm.pdf" target="_blank" class="button fit">Lettre de Motivation</a></li>
+    </ul>
+</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								
+								<p>N'hésitez pas à me contacter pour toute opportunité professionnelle.</p>
+								
+								<ul class="alt">
+									<li><strong>Email :</strong> favedebastien@gmail.com</li>
+									<li><strong>Téléphone :</strong> 07.68.75.05.84.</li>
+									<li><strong>Localisation :</strong> IUT Montpellier / Alès</li>
+								</ul>
+
+								<div style="width: 100%; margin-bottom: 20px;">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6918.248430130134!2d3.84809467672345!3d43.635335371103075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6aec3fc4072d7%3A0x1a1585a408bcfed4!2sIUT%20Montpellier!5e1!3m2!1sfr!2sfr!4v1769974183488!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+
+								<li><a href="https://www.linkedin.com/in/bastien-favède-650543253" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+    function allerAuVoyage(destination) {
+        // 1. Ouvre l'onglet Portfolio
+        window.location.hash = '#work';
+        
+        // 2. On attend 750ms (0.75 secondes) pour être sûr que l'animation est FINIE
+        setTimeout(function() {
+            var element = document.getElementById(destination);
+            if(element) {
+                // 3. On force le scroll vers l'élément
+                element.scrollIntoView({behavior: "smooth", block: "start"});
+            } else {
+                console.log("Erreur : Je ne trouve pas l'ID " + destination);
+            }
+        }, 750); 
+    }
+</script>
+</body>
+	</body>
+</html>
